@@ -95,7 +95,6 @@ public class FileUtil {
                 // 反之则存进 wrong 中
                 try {
                     if (a.equals(b)){
-                        System.out.println(str1.charAt(0));
                         correct.append(String.valueOf(str1.substring(0, str1.indexOf(".")))).append(", ");
                         corCount++;
                     } else {
