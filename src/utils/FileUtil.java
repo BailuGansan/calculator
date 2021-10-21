@@ -20,6 +20,11 @@ public class FileUtil {
         FileWriter wir2 = null;
 
         try {
+            // 输出文件夹路径，创建输出文件夹对象
+            String url = "src/output/";
+            File dir = new File(url);
+            dir.mkdirs();
+
             wir1 = new FileWriter("src/output/Exercises.txt");
             wir2 = new FileWriter("src/output/Answers.txt");
             PrintWriter pri1 = new PrintWriter(wir1, false);
